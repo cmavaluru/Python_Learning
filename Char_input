@@ -1,0 +1,6 @@
+import datetime
+name=input("Enter the name of the user ")
+age=int(input("Enter the age "))
+now=datetime.datetime.now()
+age_year=((now.year-age)+100)
+print(name+" age will be 100 yrs by "+str(age_year))
