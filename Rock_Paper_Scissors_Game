@@ -1,0 +1,33 @@
+
+User1= input("Enter User1 Name ")
+User2= input("Enter User2 Name ")
+U1=input(User1+" Now select either Rock, Scissors Or Paper ")
+U2=input(User2+" Now you select either Rock, Scissors or Paper ")
+
+def compare(U1,U2):
+    if U1==U2:
+        print("It's a Tie")
+    elif U1=='Rock':
+        if U2=='Scissors':
+            print(User1+" Wins the Game")
+        elif U2=='Paper':
+            print(User2+ " Wins the Game")
+        else:
+            print("Invalid input entered by "+User2)
+    elif U1=='Scissors':
+        if U2=='Paper':
+            print(User1+" Wins the Game")
+        elif U2=='Rock':
+            print(User2+ " Wins the Game")
+        else:
+            print("Invalid input entered by "+User2)
+
+    elif U1=='Paper':
+        if U2=='Rock':
+            print(User1+" Wins the Game")
+        elif U2=='Scissors':
+            print(User2+ " Wins the Game")
+        else:
+            print("Invalid input entered by "+User2)
+
+compare(U1,U2)
