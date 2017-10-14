@@ -1,0 +1,10 @@
+a = [5, 10, 15, 20, 15, 10, 5]
+
+b=a[::-1]
+
+print(b)
+
+if a==b:
+    print("The Entered List is Palindrome")
+else:
+    print("Not a Palindrome")
