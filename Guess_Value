@@ -1,0 +1,17 @@
+import random
+
+guess=random.randint(1,9)
+Running=True
+
+while Running:
+    value=input("Enter some random number")
+    if(guess==(int(value))):
+        print("Guessed value is exactly same as random value")
+    else:
+        diff=(int(value))-guess
+        print(diff)
+        if diff<5:
+            print("Difference between random and guessed value is too low")
+        else:
+            print("Difference between two values is too high")
+
